@@ -12,8 +12,7 @@ jobs:
           ref: 'master'
 
       - run: |
-          git remote add bitbucket git@bitbucket.org:jingzhuyan/new1.git
           git config --global user.email "github@rootstack.com"
           git config --global user.name "Github deployment"
           git checkout master
-          git push -u https://campdeployment:LKNWLKejqw!@campdrupalsite.scm.azurewebsites.net/CampDrupalSite.gi master
+          git push -u https://campdeployment:LKNWLKejqw!@campdrupalsite.scm.azurewebsites.net/CampDrupalSite.git master
