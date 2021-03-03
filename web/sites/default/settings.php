@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'p_a-qD1ROh3cZyZ-ZAlJmbn_rWSMcdyxTlWGH7io6ynvFo2dZXp4TfBF-wHMVCVbcQcnA2q2cQ';
 
 /**
  * Deployment identifier.
@@ -781,7 +781,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $settings['config_sync_directory'] = '../config/sync';
 
- $databases['default']['default'] = [
+$databases['default']['default'] = [
    'database' => getenv('DB_DATABASE'),
     'username' => getenv('DB_USERNAME'),
     'password' => getenv('DB_PASSWORD'),
@@ -791,3 +791,4 @@ $settings['config_sync_directory'] = '../config/sync';
     'prefix' => '',
     'collation' => 'utf8mb4_general_ci',
 ];
+
