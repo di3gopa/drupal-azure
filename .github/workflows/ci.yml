@@ -15,4 +15,4 @@ jobs:
           git config --global user.email "github@rootstack.com"
           git config --global user.name "Github deployment"
           git checkout master
-          git push -u https://campdeployment:LKNWLKejqw!@campdrupalsite.scm.azurewebsites.net/CampDrupalSite.git master
+          git push -u https://campdeployment:${{ secrets.AZURE_GIT }}@campdrupalsite.scm.azurewebsites.net/CampDrupalSite.git master
